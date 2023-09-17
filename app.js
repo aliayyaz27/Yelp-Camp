@@ -33,9 +33,9 @@ const userRoutes=require('./routes/user');
 
 
 // for atlas
-// const dbUrl=process.env.DB_URL
+const dbUrl=process.env.DB_URL
 //for local connection 'mongodb://localhost:27017/yelp-camp'
-const dbUrl='mongodb://localhost:27017/yelp-camp'
+// const dbUrl='mongodb://localhost:27017/yelp-camp'
 
 mongoose.set("strictQuery",false);
 mongoose.connect(dbUrl,{
